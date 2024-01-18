@@ -2,3 +2,4 @@ pip
 psycopg[binary,pool]
 psycopg2-binary
 Flask
+python3-flask
