@@ -1,3 +1,4 @@
+pip
+psycopg[binary,pool]
+psycopg2-binary
 Flask
-python3-psycopg2
-psycopg[binary]
