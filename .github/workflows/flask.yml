@@ -21,4 +21,4 @@ jobs:
            cache: 'pip'
 
     - name: Setup venv
-      uses: echo '${{ secrets.SUDO_PASSWORD }}' | sudo -S apt install python3-venv 
+      uses: echo '${{ secrets.SUDO_PASSWORD }}'  
