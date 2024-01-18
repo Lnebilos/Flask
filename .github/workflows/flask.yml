@@ -17,5 +17,8 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
-        cache: 'pip'
+        #cache: 'pip'
         python-version: 3.11
+    
+    - name: Setup venv
+      uses: echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S apt install python3-venv 
