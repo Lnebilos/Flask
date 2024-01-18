@@ -2,6 +2,15 @@
 name: Flask Deploy and Run
 on:
   push:
+
+jobs:
+  deploy:
     runs-on: self-hosted
     steps:
-    
+    - name: checkout
+      uses: actions/checkout@v4
+    - name: Setup Python
+      uses: actions/setup-python@v1
+    - name: install Python env
+      run:  apt install python3-venv
+
