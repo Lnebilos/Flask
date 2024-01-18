@@ -27,5 +27,6 @@ jobs:
         source venv/bin/activate
         pip install -r requirements.txt
         ls -alh
+        Flask run
          
 
