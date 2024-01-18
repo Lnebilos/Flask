@@ -22,7 +22,7 @@ jobs:
 
     - name: Setup venv
       run: |
-        echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S apt install python3-venv
+        echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S apt install -y python3-venv
         python3 -m venv venv 
         source venv/bin/activate
         cd Flask
