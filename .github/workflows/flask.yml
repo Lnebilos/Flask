@@ -1,25 +1,21 @@
 ---
 name: Flask Deploy and Run
+
 on:
   push:
 
 jobs:
+
   deploy:
+
     runs-on: self-hosted
     steps:
 
     - name: checkout
       uses: actions/checkout@v4
 
-    - name: install Python env
+    - name: Setup Python
       uses: actions/setup-python@v5
       with:
         cache: 'pip'
-
-    - name: install env 
-      run: |
-        pip install -r requirements.txt
-        python3 -m venv venv
-        source venv/bin/activate
-        cd Flask
-        Flask run
+        python-version: 3.11
